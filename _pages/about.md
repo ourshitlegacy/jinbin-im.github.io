@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <strong style="color: #7b27d8;">Affiliations</strong>. Department of Architectural Engineering. Hanyang University.
+subtitle: Affiliations. Department of Architectural Engineering. Hanyang University.
 
 profile:
   align: right
