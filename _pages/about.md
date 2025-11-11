@@ -130,11 +130,11 @@ I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where
 }
 
 .role-participant {
-  background: #efe7fb; /* 청록색 */
+  background: #d9b7f2; /* 청록색 */
 }
 
 .role-student {
-  background: #e0e0e0; /* 회색 */
+  background: #efe7fb; /* 회색 */
 }
 
 .research-year {
