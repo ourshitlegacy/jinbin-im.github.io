@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
+title: Development of Decision-making Framework to Support Personalized Spatial Composition 
+based on Temperament, Perception and Bio-markers Applying Digital Twin.
 description: another without an image
 img:
 importance: 3
-category: fun
+category: Built Environment
 ---
 
 Every project has a beautiful feature showcase page.
