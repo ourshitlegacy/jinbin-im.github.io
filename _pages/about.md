@@ -63,7 +63,7 @@ latest_posts: false
 </div>
 <div style="margin-bottom: 25px;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-    <strong>M.S. Architectural Engineering</strong>
+    <strong>M.S. in Architectural Engineering</strong>
     <span style="white-space: nowrap;">2022</span>
   </div>
   <div style="color: #666; margin-left: 0;">Hanyang University, South Korea</div>
