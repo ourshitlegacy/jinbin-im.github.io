@@ -1,37 +1,53 @@
+{% if group_key != prev_group_key %}
+  {% if prev_group_key %}
+        </div> <!-- conf-group-content 닫기 -->
+      </div> <!-- conf-group 닫기 -->
+    {% endif %}
+  {% endif %}
+
+  {% assign year = group_key | split: ',' | first %}
+  {% assign conf = group_key | split: ',' | last | strip %}
+  
+  {% if year != prev_year %}
+    {% if prev_year %}
+      </div> <!-- year-group 닫기 -->
+    {% endif %}
+    <div class="year-group">
+      <h2 class="year-title">{{ year }}</h2>
+    {% assign prev_year = year %}
+  {% endif %}
+  
+  {% assign conf_base = conf | remove: year | strip %}
+  {% assign conf_logo_color = "" %}
+  {% assign conf_full_name = "" %}
+  
+  {% if conf contains "ICCEPM" %}
+    {% assign conf_logo_color = "background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" %}
+    {% assign conf_full_name = "International Conference on Construction Engineering and Project Management" %}
+  {% elsif conf contains "ISARC" %}
+    {% assign conf_logo_color = "background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);" %}
+    {% assign conf_full_name = "International Symposium on Automation and Robotics in Construction" %}
+  {% else %}
+    {% assign conf_logo_color = "background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);" %}
+    {% assign conf_full_name = conf %}
+  {% endif %}
+  
+  <div class="conf-group">
+    <div class="conf-group-logo" style="{{ conf_logo_color }}">
+      <span style="color: white; font-size: 1.1rem; font-weight: 700; text-align: center; padding: 10px; line-height: 1.3;">{{ conf_base }}<br>{{ year }}</span>
+    </div>
+    <div class="conf-group-content">
+      <div class="conf-group-title">{{ conf_full_name }} {{ year }}</div>
+      
+  {% assign prev_group_key = group_key %}
+{% endif %}
+
 <style>
 .author-me {
   color: #7b27d8 !important;
   font-weight: 700 !important;
   font-style: normal !important;
   text-decoration: none !important;
-}
-
-.journal-metrics {
-  font-size: 0.9em;
-  color: #666;
-  margin-left: 5px;
-  font-weight: 500;
-}
-
-.pub-year {
-  color: #555 !important;
-}
-
-/* 컨퍼런스 그룹 스타일 */
-.conf-group {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background: #f9f9f9;
-  border-radius: 8px;
-}
-
-.conf-group-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #ddd;
 }
 
 .conf-location {
@@ -45,11 +61,12 @@
   margin-left: 10px;
 }
 
-/* Bibtex 토글 스타일 */
+.abstract.hidden,
 .bibtex.hidden {
   display: none;
 }
 
+.abstract,
 .bibtex {
   margin-top: 1rem;
   padding: 1rem;
@@ -63,7 +80,7 @@
   {%- assign conf_name = entry.booktitle | default: entry.series | default: entry.journal -%}
   {%- assign conf_loc  = entry.location | default: entry.address -%}
 
-  <!-- 상단: 컨퍼런스 이름 + 지역 (연도 제거) -->
+  <!-- 상단: 컨퍼런스 이름 + 지역 -->
   <div class="conf-meta d-flex flex-wrap align-items-center mb-2">
     <span class="conf-name flex-grow-1 px-2 py-1">{{ conf_name }}</span>
     {% if conf_loc %}
@@ -139,9 +156,6 @@
     {%- if entry.bibtex_show %}
       <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
     {%- endif %}
-    {%- if entry.html %}
-      <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
-    {%- endif %}
     {%- if entry.pdf %}
       {% if entry.pdf contains '://' %}
         <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
@@ -149,37 +163,14 @@
         <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
       {% endif %}
     {%- endif %}
-    {%- if entry.supp %}
-      {% if entry.supp contains '://' %}
-        <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
-      {% else %}
-        <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
-      {% endif %}
-    {%- endif %}
-    {%- if entry.blog %}
-      <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
-    {%- endif %}
-    {%- if entry.code %}
-      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
-    {%- endif %}
-    {%- if entry.poster %}
-      {% if entry.poster contains '://' %}
-        <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
-      {% else %}
-        <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
-      {% endif %}
-    {%- endif %}
-    {%- if entry.slides %}
-      {% if entry.slides contains '://' %}
-        <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
-      {% else %}
-        <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
-      {% endif %}
-    {%- endif %}
-    {%- if entry.website %}
-      <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
-    {%- endif %}
   </div>
+
+  <!-- 숨김 영역: 초록 -->
+  {% if entry.abstract %}
+    <div class="abstract hidden">
+      <p>{{ entry.abstract }}</p>
+    </div>
+  {% endif %}
 
   <!-- 숨김 영역: BibTeX -->
   {% if entry.bibtex_show %}
@@ -188,3 +179,14 @@
     </div>
   {% endif %}
 </div>
+
+<script>
+$(document).ready(function() {
+  $('.links .abstract').click(function() {
+    $(this).closest('.conf-item').find('.abstract.hidden').slideToggle();
+  });
+  $('.links .bibtex').click(function() {
+    $(this).closest('.conf-item').find('.bibtex.hidden').slideToggle();
+  });
+});
+</script>
