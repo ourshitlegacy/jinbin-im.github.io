@@ -81,7 +81,7 @@ latest_posts: false
 
 <div style="margin-bottom: 25px;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-    <strong>Master of Architectural Engineering</strong>
+    <strong>M.S. Architectural Engineering</strong>
     <span style="white-space: nowrap;">2022</span>
   </div>
   <div style="color: #666; margin-left: 0;">Hanyang University, South Korea</div>
@@ -89,7 +89,7 @@ latest_posts: false
 
 <div style="margin-bottom: 25px;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-    <strong>B.S.E. in Interior Architecture Design</strong>
+    <strong>B.S. in Interior Architecture Design</strong>
     <span style="white-space: nowrap;">2020</span>
   </div>
   <div style="color: #666; margin-left: 0;">Hanyang University, South Korea</div>
