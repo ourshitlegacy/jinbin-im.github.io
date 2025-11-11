@@ -30,21 +30,21 @@ news: false
 latest_posts: false
 ---
 
-**Jin-Bin Im** is a Ph.D. candidate at Hanyang University, Architectural Engineering . He is a graduate research assistant at the Client Briefing and Program Management (CB&PM) Lab. He earned a Master's degree in Architectural Engineering (2022) from the same institution, and B.S. in Interior Architecture Design (2020) from Hanyang University, South Korea.
+**Jin-Bin Im** is a Ph.D. candidate in Architectural Engineering at Hanyang University, South Korea, where he also serves as a Graduate Research Assistant at the Client Briefing and Program Management (CB&PM) Lab. He earned his M.S. in Architectural Engineering (2022) and B.S. in Interior Architecture Design (2020) from Hanyang University. His academic work focuses on integrating human-centered principles with computational design and extended reality technologies to enhance spatial design processes.
 
 **Research Interest**
 
-- User-centered design
-- Human responses
-- Extended Reality, such as virtual reality (VR) and mixed reality (MR)
-- Spatial design automation
+- User-centered design process and communication
+- Human responses to spatial environments
+- Extended Reality (XR), including virtual reality (VR) and mixed reality (MR)
+- Automation and artificial intelligence in spatial design
 
 **Skills**
 
 <div style="font-size: 0.88em; line-height: 1">
-  <p><strong>Programming:</strong> Python, R, JavaScript </p>
-  <p><strong>ML/AI:</strong> PyTorch, TensorFlow, BERT, RoBERTa</p>  
-  <p><strong>Tools:</strong> Revit, AutoCAD, enscape</p>
+  <p><strong>Programming:</strong> Python, R </p>
+  <p><strong>ML/AI:</strong> PyTorch, TensorFlow, BERT, RoBERTa, Transformer</p>  
+  <p><strong>Tools:</strong> Revit, AutoCAD, Enscape</p>
 </div>
 
 ---
