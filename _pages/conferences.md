@@ -71,9 +71,6 @@ nav_order: 3
   
   <!-- ICCEPM 2025 -->
   <div class="conf-group">
-    <div>
-      <span style="color: white; font-size: 1.1rem; font-weight: 700; text-align: center; padding: 10px; line-height: 1.3;">ICCEPM<br>2025</span>
-    </div>
     <div class="conf-group-content">
       <div class="conf-group-title">International Conference on Construction Engineering and Project Management (ICCEPM)</div>
       <div class="publications">
@@ -84,9 +81,6 @@ nav_order: 3
 
   <!-- ISARC 2025 -->
   <div class="conf-group">
-    <div>
-      <span style="color: white; font-size: 1.1rem; font-weight: 700; text-align: center; padding: 10px; line-height: 1.3;">ISARC<br>2025</span>
-    </div>
     <div class="conf-group-content">
       <div class="conf-group-title">International Symposium on Automation and Robotics in Construction (ISARC)</div>
       <div class="publications">
@@ -102,9 +96,6 @@ nav_order: 3
   
   <!-- ICCEPM 2024 -->
   <div class="conf-group">
-    <div>
-      <span style="color: white; font-size: 1.1rem; font-weight: 700; text-align: center; padding: 10px; line-height: 1.3;">ISARC<br>2024</span>
-    </div>
     <div class="conf-group-content">
       <div class="conf-group-title">International Conference on Construction Engineering and Project Management (ICCEPM)</div>
       <div class="publications">
