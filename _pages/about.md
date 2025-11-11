@@ -41,10 +41,11 @@ latest_posts: false
 
 **Skills**
 
+<div style="font-size: 0.88em">
 **Programming**: Python, R, JavaScript  
 **ML/AI**: PyTorch, TensorFlow, BERT, RoBERTa  
 **Tools**: QGIS, Revit, AutoCAD, PostGIS, enscape
----
+</div>
 
 **Current Under Review Papers**
 
