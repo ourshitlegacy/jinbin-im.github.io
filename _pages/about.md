@@ -15,10 +15,11 @@ profile:
       <a href="https://www.researchgate.net/profile/Im-Jinbin?ev=hdr_xprf" target="_blank" style="margin: 0 10px;"> 
         <i class="ai ai-researchgate ai-2x"></i> 
       </a> 
+      <a href="https://orcid.org/my-orcid?orcid=0000-0003-1672-5439" target="_blank" style="margin: 0 10px;"> 
+        <i class="ai ai-orcid ai-2x"></i> 
+      </a> 
       <a href="https://www.linkedin.com/in/jin-bin-im-5aa3b2343/" target="_blank" style="margin: 0 10px;"> 
         <i class="fab fa-linkedin ai-2x"></i> 
-      </a> <a href="/assets/pdf/jinbin_im_CV.pdf" target="_blank" style="margin: 0 10px;"> 
-        <i class="ai ai-cv ai-2x"></i> 
       </a> 
     </div>
     <br>
@@ -29,6 +30,13 @@ profile:
         Updated 2025.11.12
       </span>      
     </a>
+    <p style="text-align: center; margin-top: 6px; font-size: 0.9rem; color: #444;">
+      Contact:
+      <a href="mailto:jbim0202@hanyang.ac.kr"
+       style="color: #7b27d8; text-decoration: none; font-weight: 500;">
+       jbim0202@hanyang.ac.kr
+      </a>   
+    </p>
     
 selected_papers: false
 social: false 
