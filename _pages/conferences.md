@@ -12,14 +12,6 @@ nav_order: 3
   margin-bottom: 3rem;
 }
 
-.year-title {
-  font-size: 2rem;
-  font-weight: 300;
-  color: #ccc;
-  text-align: right;
-  margin-bottom: 2rem;
-}
-
 .conf-group {
   display: flex;
   margin-bottom: 2rem;
@@ -67,7 +59,6 @@ nav_order: 3
 
 <!-- 2025년 -->
 <div class="year-group">
-  <h2 class="year-title">2025</h2>
   
   <!-- ICCEPM 2025 -->
   <div class="conf-group">
@@ -92,7 +83,6 @@ nav_order: 3
 
 <!-- 2024년 -->
 <div class="year-group">
-  <h2 class="year-title">2024</h2>
   
   <!-- ICCEPM 2024 -->
   <div class="conf-group">
