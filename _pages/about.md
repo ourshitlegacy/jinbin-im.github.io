@@ -9,9 +9,25 @@ profile:
   image: portrait.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>611-2, Science and Technology Bd.</p>
-    <p>222 Wangsimniro, Seongdong-gu</p>
-    <p>Seoul, South Korea 04763</p>
+    <div style="text-align: center; margin-top: 15px;">
+      <a href="https://scholar.google.com/citations?user=fBEZousAAAAJ" target="_blank" style="margin: 0 10px;">
+        <i class="ai ai-google-scholar ai-2x"></i>
+      </a>
+      <a href="https://www.researchgate.net/profile/Im-Jinbin?ev=hdr_xprf" target="_blank" style="margin: 0 10px;">
+        <i class="ai ai-researchgate ai-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jin-bin-im-5aa3b2343/" target="_blank" style="margin: 0 10px;">
+        <i class="fab fa-linkedin ai-2x"></i>
+      </a>
+      <a href="/assets/pdf/CV.pdf" target="_blank" style="margin: 0 10px;">
+        <i class="ai ai-cv ai-2x"></i>
+      </a>
+    </div>
+
+selected_papers: true
+social: false  # 위에서 직접 추가했으므로 false
+news: false
+latest_posts: false
 ---
 
 **Jin-Bin Im** is a Ph.D. candidate at Hanyang University, Architectural Engineering . He is a graduate research assistant at the Client Briefing and Program Management (CB&PM) Lab. He earned a Master's degree in Architectural Engineering (2022) from the same institution, and B.S. in Interior Architecture Design (2020) from Hanyang University, South Korea.
