@@ -75,8 +75,6 @@ latest_posts: false
   <div style="color: #666; margin-left: 0;">Hanyang University, South Korea</div>
 </div>
 
----
-
 ## Research Experience
 
 **Research Manager**
