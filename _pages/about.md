@@ -24,13 +24,13 @@ profile:
     </div>
     <br>
     <a href="/assets/pdf/jinbin_im_CV.pdf" target="_blank"
-       style="display: block; text-align: center; margin-top: 8px; font-weight: 500; font-size: 0.95rem; color: #7b27d8; text-decoration: none;">
+       style="display: block; text-align: center; margin-top: 8px; font-weight: 500; font-size: 0.85rem; color: #7b27d8; text-decoration: none;">
       Curriculum Vitae (CV)
       <span style="font-size: 0.6rem; color: #7b27d8;">
         · Updated 2025.11.12
       </span>
     </a>
-    <p style="text-align: center; margin-top: 6px; font-size: 0.9rem; color: #444;">
+    <p style="text-align: center; margin-top: 6px; font-size: 0.85rem; color: #444;">
       E-mail:
       <a href="mailto:jbim0202@hanyang.ac.kr"
        style="color: #7b27d8; text-decoration: none; font-weight: 500;">
