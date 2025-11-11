@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-<!-- _pages/publications.md -->
+<!-- _pages/conferences.md -->
 
 <!-- Bibsearch Feature -->
 
