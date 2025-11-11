@@ -12,6 +12,7 @@ profile:
     <p>611-2, Science and Technology Bd.</p>
     <p>222 Wangsimniro, Seongdong-gu</p>
     <p>Seoul, South Korea 04763</p>
+
 **Education** 
 
 **Ph.D. in Construction Management**  
