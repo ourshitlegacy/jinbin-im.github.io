@@ -22,6 +22,9 @@ profile:
       <a href="/assets/pdf/jinbin_im_CV.pdf" target="_blank" style="margin: 0 10px;">
         <i class="ai ai-cv ai-2x"></i>
       </a>
+      <a href="jbim0202@hanyang.ac.kr" target="_blank" style="margin: 0 10px;">
+        <i class="ai ai-email ai-2x"></i>
+      </a>
     </div>
 
 selected_papers: false
