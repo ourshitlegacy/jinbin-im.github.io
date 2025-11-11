@@ -14,24 +14,13 @@ nav_order: 3
 
 .conf-group {
   display: flex;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
   background: #f8f9fa;
-  border-left: 4px solid #7b27d8;
+  border-left: 4px solid #e0e0e0;
   border-radius: 8px;
   gap: 1.5rem;
   align-items: flex-start;
-}
-
-.conf-group-logo {
-  flex-shrink: 0;
-  width: 120px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .conf-group-content {
@@ -50,10 +39,6 @@ nav_order: 3
     flex-direction: column;
   }
   
-  .conf-group-logo {
-    width: 100%;
-    height: 100px;
-  }
 }
 </style>
 
