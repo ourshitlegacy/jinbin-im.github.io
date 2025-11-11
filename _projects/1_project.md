@@ -5,7 +5,7 @@ description: with background image
 img: assets/img/12.jpg
 importance: 1
 category: Built Environment
-tags: [Virtual Environment, Human Centered Design, Spaital Design]
+tags: [Extended Reality, Human Centered Design]
 related_publications: true
 ---
 
