@@ -271,3 +271,34 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+<script>
+(function bindPubToggles(){
+  function on(event, selector, handler){
+    document.addEventListener(event, function(e){
+      const el = e.target.closest(selector);
+      if (!el) return;
+      handler.call(el, e);
+    });
+  }
+
+  // Abstract 버튼 토글 (버튼: a.abstract, 내용: div.abstract.hidden)
+  on('click', 'a.abstract', function(e){
+    e.preventDefault();
+    const wrap = this.closest('.pub-item') || this.closest('.row') || document;
+    const box  = wrap.querySelector('div.abstract');
+    if (box) box.classList.toggle('hidden');
+  });
+
+  // BibTeX 버튼 토글 (버튼: a.bibtex, 내용: div.bibtex.hidden)
+  on('click', 'a.bibtex', function(e){
+    e.preventDefault();
+    const wrap = this.closest('.pub-item') || this.closest('.row') || document;
+    const box  = wrap.querySelector('div.bibtex');
+    if (box) box.classList.toggle('hidden');
+  });
+
+  // Turbolinks/PJAX 사용 시에도 다시 바인딩되도록
+  document.addEventListener('turbolinks:load', function(){ /* no-op, 위 위임 바인딩이면 재바인딩 불필요 */ });
+})();
+</script>
