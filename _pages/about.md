@@ -20,11 +20,13 @@ profile:
       </a> <a href="/assets/pdf/jinbin_im_CV.pdf" target="_blank" style="margin: 0 10px;"> 
         <i class="ai ai-cv ai-2x"></i> 
       </a> 
-      <a href="mailto:jbim0202@hanyang.ac.kr" target="_blank" style="margin: 0 10px;"> 
-        <i class="fas fa-envelope ai-2x"></i> 
-      </a>
     </div>
-
+    <br>
+    <a href="/assets/pdf/jinbin_im_CV.pdf" target="_blank"
+       style="display: block; text-align: center; margin-top: 8px; font-weight: 500; font-size: 0.95rem; color: #7b27d8; text-decoration: none;">
+      Curriculum Vitae (CV)
+    </a>
+    
 selected_papers: false
 social: false 
 news: false
