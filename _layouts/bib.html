@@ -52,7 +52,7 @@
           
           {%- if forloop.length > 1 and forloop.last == false -%}
             {% if author_is_self %}
-              <em class="me">{{author.first}} {{author.last}}</em>,&nbsp;
+              <span class="author-me">{{author.first}} {{author.last}}</span>,&nbsp;
             {% else %}
               {% if coauthor_url %}
                 <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>,&nbsp;
@@ -62,7 +62,7 @@
             {% endif %}
           {%- else -%}
             {% if author_is_self %}
-              and <em class="me">{{author.first}} {{author.last}}</em>
+              and <span class="author-me">{{author.first}} {{author.last}}</span>
             {% else %}
               {% if coauthor_url %}
                 and <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
@@ -93,7 +93,7 @@
         
         {%- if author_array_limit > 0 -%}
           {% if author_is_self %}
-            , and <em class="me">{{author.first}} {{author.last}}</em>
+            , and <span class="author-me">{{author.first}} {{author.last}}</span>
           {% else %}
             {% if coauthor_url %}
               , and <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
@@ -103,7 +103,7 @@
           {% endif %}
         {%- else -%}
           {% if author_is_self %}
-            <em class="me">{{author.first}} {{author.last}}</em>
+            <span class="author-me">{{author.first}} {{author.last}}</span>
           {% else %}
             {% if coauthor_url %}
               <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
@@ -115,9 +115,12 @@
       </div>
 
       <div class="periodical">
-        <em>{{entry.journal}}</em>, {{entry.year}}
+        <em>{{entry.journal}}</em>
         {% if entry.note %}
-          <span class="note">[{{entry.note}}]</span>
+          <span class="journal-metrics">[{{entry.note}}]</span>
+        {% endif %}
+        {% if entry.year %}
+          <span class="pub-year">, {{entry.year}}</span>
         {% endif %}
       </div>
     {% endif %}
