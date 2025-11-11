@@ -305,18 +305,18 @@ latest_posts: false
 
 <div style="font-size: 0.88em; line-height: 1; margin-bottom: 30px;">
 
-<p><strong><a href='#'>Im, J. B.†</a></strong>, Ahn, C.†, Lee, S. Y., Yoo, Y., & Kim, J. H.* (2025). Techno-Economic Feasibility of e-Methanol System fueled by CO2 and Green Hydrogen with Policy Pathways to Competitiveness. <em>Energy Policy</em>, Elsevier, (Co-First Author) (Under Review).</p>
+<p><strong style="color: #7b27d8;">Im, J. B.†</strong>, Ahn, C.†, Lee, S. Y., Yoo, Y., & Kim, J. H.* (2025). Techno-Economic Feasibility of e-Methanol System fueled by CO2 and Green Hydrogen with Policy Pathways to Competitiveness. <em>Energy Policy</em>, Elsevier, (Co-First Author) (Under Review).</p>
 
-<p>Lee, K. T., <strong><a href='#'>Im, J. B.</a></strong>, Hong, R. L., & Kim, J. H.* (2025). Enhancing Retrieval-Augmented Generation Performance through Network Analysis of Question Types in Public Procurement Law. <em>Journal of Management in Engineering</em>, ASCE, (Under Review).</p>
+<p>Lee, K. T., <strong style="color: #7b27d8;">Im, J. B.</strong>, Hong, R. L., & Kim, J. H.* (2025). Enhancing Retrieval-Augmented Generation Performance through Network Analysis of Question Types in Public Procurement Law. <em>Journal of Management in Engineering</em>, ASCE, (Under Review).</p>
 
-<p><strong><a href='#'>Im, J. B.</a></strong>, Lee, K. T. & Kim, J. H.* (2025). Effects of Visualization Quality on Occupant Responses in Immersive Design Review Environments. <em>Developments in the Built Environment</em>, Elsevier, (Under Review).</p>
+<p><strong style="color: #7b27d8;">Im, J. B.</strong>, Lee, K. T. & Kim, J. H.* (2025). Effects of Visualization Quality on Occupant Responses in Immersive Design Review Environments. <em>Developments in the Built Environment</em>, Elsevier, (Under Review).</p>
 
-<p>Ochirsuren, N., Kye, Y. S., <strong><a href='#'>Im, J. B.</a></strong>, Zhang, E., & Lee, K. T., Kim, J. H.* (2025). Effect of Changing Sequence in Semi-Top-Down Construction Works to Optimize Time and Cost: A Case Study on Korean Apartment Projects. <em>Engineering, Construction and Architectural Management</em>, Emerald, (Under Review).</p>
+<p>Ochirsuren, N., Kye, Y. S., <strong style="color: #7b27d8;">Im, J. B.</strong>, Zhang, E., & Lee, K. T., Kim, J. H.* (2025). Effect of Changing Sequence in Semi-Top-Down Construction Works to Optimize Time and Cost: A Case Study on Korean Apartment Projects. <em>Engineering, Construction and Architectural Management</em>, Emerald, (Under Review).</p>
 
-<p>Shin, S. H., <strong><a href='#'>Im, J. B.</a></strong>, Choi, H., Kim, J. H., & Lee, K. T.* (2025). AI-Based Approach to International Market Selection Models Considering Construction Factors: A Case Study of Indian Firms. <em>Journal of Civil Engineering and Management</em>, Vilnius Tech. Press, (Under Review).</p>
+<p>Shin, S. H., <strong style="color: #7b27d8;">Im, J. B.</strong>, Choi, H., Kim, J. H., & Lee, K. T.* (2025). AI-Based Approach to International Market Selection Models Considering Construction Factors: A Case Study of Indian Firms. <em>Journal of Civil Engineering and Management</em>, Vilnius Tech. Press, (Under Review).</p>
 
-<p>Hong, R. L., <strong><a href='#'>Im, J. B.</a></strong>, Kang, H. G., & Kim, J. H.* (2025). Prediction of structural frame works safety and health management expenses in apartment construction projects by introducing interpretable machine learning. <em>Engineering, Construction, and Architectural Management</em>, Emerald, (Under Review).</p>
+<p>Hong, R. L., <strong style="color: #7b27d8;">Im, J. B.</strong>, Kang, H. G., & Kim, J. H.* (2025). Prediction of structural frame works safety and health management expenses in apartment construction projects by introducing interpretable machine learning. <em>Engineering, Construction, and Architectural Management</em>, Emerald, (Under Review).</p>
 
-<p>Hong, R. L., Yoon, J. H., <strong><a href='#'>Im, J. B.</a></strong>, & Kim, J. H.* (2025). Prediction of Actual Safety and Health Management Expenses for Water Supply System Construction Projects in Korea through Machine Learning. <em>Journal of Civil Engineering and Management</em>, Vilnius Tech. Press, (Under Review).</p>
+<p>Hong, R. L., Yoon, J. H., <strong style="color: #7b27d8;">Im, J. B.</strong>, & Kim, J. H.* (2025). Prediction of Actual Safety and Health Management Expenses for Water Supply System Construction Projects in Korea through Machine Learning. <em>Journal of Civil Engineering and Management</em>, Vilnius Tech. Press, (Under Review).</p>
 
 </div>
