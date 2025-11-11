@@ -44,25 +44,19 @@
 </style>
 
 <div class="conf-item mb-4 pb-3">
-  {%- assign conf_name = entry.booktitle | default: entry.series | default: entry.journal -%}
   {%- assign conf_loc  = entry.location | default: entry.address -%}
 
-  <!-- 상단: 컨퍼런스 이름 + 지역 -->
-  <div class="conf-meta d-flex flex-wrap align-items-center mb-2">
-    <span class="conf-name flex-grow-1 px-2 py-1">{{ conf_name }}</span>
-    {% if conf_loc %}
-      <span class="conf-location">📍 {{ conf_loc }}</span>
-    {% endif %}
-  </div>
-
-  <!-- 제목 with 링크 -->
-  <div class="conf-title h5 mb-1">
+  <!-- 제목 with 링크 (상단으로 이동) -->
+  <div class="conf-title h5 mb-2">
     {% if entry.doi %}
       <a href="https://doi.org/{{ entry.doi }}" target="_blank">{{ entry.title }}</a>
     {% elsif entry.url %}
       <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
     {% else %}
       {{ entry.title }}
+    {% endif %}
+    {% if conf_loc %}
+      <span class="conf-location">📍 {{ conf_loc }}</span>
     {% endif %}
   </div>
 
