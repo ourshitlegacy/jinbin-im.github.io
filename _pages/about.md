@@ -6,7 +6,7 @@ subtitle: Affiliations. Department of Architectural Engineering. Hanyang Univers
 
 profile:
   align: right
-  image: portrait.jpg
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <div style="text-align: center; margin-top: 15px;">
