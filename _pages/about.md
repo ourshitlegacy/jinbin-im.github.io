@@ -49,7 +49,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #7b27d8; font-weight: 700;">Education</h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333; font-weight: 700;">Education</h3>
 
 <div style="margin-bottom: 25px;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
@@ -75,7 +75,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #7b27d8; font-weight: 700;">Research Projects</h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333; font-weight: 700;">Research Projects</h3>
 
 <style>
 .research-projects {
@@ -284,7 +284,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #7b27d8; font-weight: 700;">Teaching</h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333; font-weight: 700;">Teaching</h3>
 
 **Teaching Fellow**
 
