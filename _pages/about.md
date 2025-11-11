@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <p><strong style="color: #7b27d8;">Affiliations</strong></p>. Client Briefing and Program Management Lab., Department of Architectural Engineering, Hanyang University.
+subtitle: Affiliations. Client Briefing and Program Management Lab., Department of Architectural Engineering, Hanyang University.
 
 profile:
   align: right
