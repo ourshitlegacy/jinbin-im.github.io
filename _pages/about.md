@@ -24,7 +24,10 @@ profile:
     <br>
     <a href="/assets/pdf/jinbin_im_CV.pdf" target="_blank"
        style="display: block; text-align: center; margin-top: 8px; font-weight: 500; font-size: 0.95rem; color: #7b27d8; text-decoration: none;">
-      Curriculum Vitae (CV)
+      Curriculum Vitae (CV) (2025.11.12)
+      <span style="display: block; font-size: 0.8rem; color: #7b27d8; margin-top: 3px;">
+        Updated 2025.11.12
+      </span>      
     </a>
     
 selected_papers: false
