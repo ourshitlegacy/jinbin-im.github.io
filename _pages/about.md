@@ -31,8 +31,8 @@ news: false
 latest_posts: false
 ---
 
-I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where I also serve as a Graduate Research Assistant at the Client Briefing and Program Management (CB&PM) Lab. I earned my M.S. in Architectural Engineering (20222) and B.S. in Interior Architecture Design (2020) from the same Institution. My academic work focuses on three key areas: **1) optimizing spatial design based on human-centered requirements**, **2) design simulation using extended reality (XR)**, and **3) natural language processing and LLM-based intelligent systems for design automation.
-**
+I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where I also serve as a Graduate Research Assistant at the Client Briefing and Program Management (CB&PM) Lab. I earned my M.S. in Architectural Engineering (20222) and B.S. in Interior Architecture Design (2020) from the same Institution. My academic work focuses on three key areas: **1) optimizing spatial design based on human-centered requirements**, **2) design simulation using extended reality (XR)**, and **3) natural language processing and LLM-based intelligent systems for design automation.**
+
 **Research Interests**
 
 Extended Reality (Virtual Reality, Mixed Reality), Natural Language Processing, Large Language Models, User Requirements, User Psychology and Physiology, Knowledge Asymmetry, Design Communication, Design Automation.
