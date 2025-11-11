@@ -1,56 +1,68 @@
-{% if group_key != prev_group_key %}
-  {% if prev_group_key %}
-        </div> <!-- conf-group-content 닫기 -->
-      </div> <!-- conf-group 닫기 -->
-    {% endif %}
-  {% endif %}
-
-  {% assign year = group_key | split: ',' | first %}
-  {% assign conf = group_key | split: ',' | last | strip %}
-  
-  {% if year != prev_year %}
-    {% if prev_year %}
-      </div> <!-- year-group 닫기 -->
-    {% endif %}
-    <div class="year-group">
-      <h2 class="year-title">{{ year }}</h2>
-    {% assign prev_year = year %}
-  {% endif %}
-  
-  {% assign conf_base = conf | remove: year | strip %}
-  {% assign conf_logo_color = "" %}
-  {% assign conf_full_name = "" %}
-  
-  {% if conf contains "ICCEPM" %}
-    {% assign conf_logo_color = "background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" %}
-    {% assign conf_full_name = "International Conference on Construction Engineering and Project Management" %}
-  {% elsif conf contains "ISARC" %}
-    {% assign conf_logo_color = "background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);" %}
-    {% assign conf_full_name = "International Symposium on Automation and Robotics in Construction" %}
-  {% else %}
-    {% assign conf_logo_color = "background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);" %}
-    {% assign conf_full_name = conf %}
-  {% endif %}
-  
-  <div class="conf-group">
-    <div class="conf-group-logo" style="{{ conf_logo_color }}">
-      <span style="color: white; font-size: 1.1rem; font-weight: 700; text-align: center; padding: 10px; line-height: 1.3;">{{ conf_base }}<br>{{ year }}</span>
-    </div>
-    <div class="conf-group-content">
-      <div class="conf-group-title">{{ conf_full_name }} {{ year }}</div>
-      
-  {% assign prev_group_key = group_key %}
-{% endif %}
+---
+layout: page
+permalink: /conferences/
+title: conferences
+description: conferences by categories in reversed chronological order.
+nav: true
+nav_order: 3
+---
 
 <style>
-.author-me {
-  color: #7b27d8 !important;
-  font-weight: 700 !important;
-  font-style: normal !important;
-  text-decoration: none !important;
+.year-group {
+  margin-bottom: 3rem;
 }
 
-.conf-location {
+.year-title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #ccc;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.conf-group {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-left: 4px solid #7b27d8;
+  border-radius: 8px;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.conf-group-logo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.conf-group-content {
+  flex: 1;
+}
+
+.conf-group-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7b27d8;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.conf-title-name {
+  flex: 1;
+  min-width: 200px;
+}
+
+.conf-title-location {
   display: inline-block;
   background: #7b27d8;
   color: white;
@@ -61,132 +73,28 @@
   margin-left: 10px;
 }
 
-.abstract.hidden,
-.bibtex.hidden {
-  display: none;
-}
-
-.abstract,
-.bibtex {
-  margin-top: 1rem;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-left: 3px solid #7b27d8;
-  border-radius: 4px;
+@media (max-width: 768px) {
+  .conf-group {
+    flex-direction: column;
+  }
+  
+  .conf-group-logo {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .conf-group-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .conf-title-location {
+    margin-left: 0;
+    margin-top: 8px;
+  }
 }
 </style>
 
-<div class="conf-item mb-4 pb-3">
-  {%- assign conf_name = entry.booktitle | default: entry.series | default: entry.journal -%}
-  {%- assign conf_loc  = entry.location | default: entry.address -%}
-
-  <!-- 상단: 컨퍼런스 이름 + 지역 -->
-  <div class="conf-meta d-flex flex-wrap align-items-center mb-2">
-    <span class="conf-name flex-grow-1 px-2 py-1">{{ conf_name }}</span>
-    {% if conf_loc %}
-      <span class="conf-location">📍 {{ conf_loc }}</span>
-    {% endif %}
-  </div>
-
-  <!-- 제목 -->
-  <div class="conf-title h5 mb-1">{{ entry.title }}</div>
-
-  <!-- 저자 -->
-  <div class="conf-authors mb-2">
-    {% assign author_array_size = entry.author_array | size %}
-    {% for author in entry.author_array %}
-      {%- assign author_is_self = false -%}
-      {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
-      
-      {%- if site.scholar.last_name contains author_last_name -%}
-        {%- if site.scholar.first_name contains author.first -%}
-          {%- assign author_is_self = true -%}
-        {%- endif -%}
-      {%- endif -%}
-
-      {%- assign coauthor_url = nil -%}
-      {%- assign clean_last_name = author_last_name | downcase | remove: "." -%}
-      {% if site.data.coauthors[clean_last_name] %}
-        {% for coauthor in site.data.coauthors[clean_last_name] %}
-          {% if coauthor.firstname contains author.first %}
-            {% if coauthor.scholar_id %}
-              {% assign coauthor_url = "https://scholar.google.com/citations?user=" | append: coauthor.scholar_id %}
-            {% elsif coauthor.url %}
-              {% assign coauthor_url = coauthor.url %}
-            {% endif %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-
-      {% if author_is_self %}
-        <span class="author-me">{{ author.first }} {{ author.last }}</span>
-      {% else %}
-        {% if coauthor_url %}
-          <a href="{{ coauthor_url }}">{{ author.first }} {{ author.last }}</a>
-        {% else %}
-          {{ author.first }} {{ author.last }}
-        {% endif %}
-      {% endif %}
-
-      {%- if forloop.last == false -%}
-        {%- if forloop.index == author_array_size | minus: 1 -%}
-          , and&nbsp;
-        {%- else -%}
-          ,&nbsp;
-        {%- endif -%}
-      {%- endif -%}
-    {% endfor %}
-  </div>
-
-  <!-- 버튼들 -->
-  <div class="links">
-    {% if entry.abstract %}
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-    {% endif %}
-    {% if entry.doi %}
-      <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
-    {% endif %}
-    {% if entry.url %}
-      <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">URL</a>
-    {% endif %}
-    {%- if entry.arxiv %}
-      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
-    {%- endif %}
-    {%- if entry.bibtex_show %}
-      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-    {%- endif %}
-    {%- if entry.pdf %}
-      {% if entry.pdf contains '://' %}
-        <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-      {% else %}
-        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-      {% endif %}
-    {%- endif %}
-  </div>
-
-  <!-- 숨김 영역: 초록 -->
-  {% if entry.abstract %}
-    <div class="abstract hidden">
-      <p>{{ entry.abstract }}</p>
-    </div>
-  {% endif %}
-
-  <!-- 숨김 영역: BibTeX -->
-  {% if entry.bibtex_show %}
-    <div class="bibtex hidden">
-      {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
-    </div>
-  {% endif %}
+<div class="publications">
+  {% bibliography --file conferences --template bib_conference --group_by year,conference --group_order descending %}
 </div>
-
-<script>
-$(document).ready(function() {
-  $('.links .abstract').click(function() {
-    $(this).closest('.conf-item').find('.abstract.hidden').slideToggle();
-  });
-  $('.links .bibtex').click(function() {
-    $(this).closest('.conf-item').find('.bibtex.hidden').slideToggle();
-  });
-});
-</script>
