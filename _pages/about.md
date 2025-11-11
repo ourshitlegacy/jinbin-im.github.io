@@ -30,7 +30,7 @@ news: false
 latest_posts: false
 ---
 
-**Jin-Bin I** is a Ph.D. candidate at Hanyang University, Architectural Engineering . He is a graduate research assistant at the Client Briefing and Program Management (CB&PM) Lab. He earned a Master's degree in Architectural Engineering (2022) from the same institution, and B.S. in Interior Architecture Design (2020) from Hanyang University, South Korea.
+**Jin-Bin Im** is a Ph.D. candidate at Hanyang University, Architectural Engineering . He is a graduate research assistant at the Client Briefing and Program Management (CB&PM) Lab. He earned a Master's degree in Architectural Engineering (2022) from the same institution, and B.S. in Interior Architecture Design (2020) from Hanyang University, South Korea.
 
 **Research Interest**
 
@@ -49,7 +49,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px;"><strong><a href='#'>Education</a></strong></h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333"><strong>Education</strong></h3>
 
 <div style="margin-bottom: 25px;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
@@ -75,7 +75,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px;"><strong><a href='#'>Research Projects</a></strong></h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333"><strong>Research Projects</strong></h3>
 
 <style>
 .research-projects {
@@ -284,7 +284,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px;"><strong><a href='#'>Teaching</a></strong></h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333"><strong>Teaching</strong></h3>
 
 **Teaching Fellow**
 
