@@ -12,10 +12,6 @@ profile:
     <p>611-2, Science and Technology Bd.</p>
     <p>222 Wangsimniro, Seongdong-gu</p>
     <p>Seoul, South Korea 04763</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
-
 Education 
 
 **Ph.D. in Construction Management**  
@@ -42,7 +38,12 @@ Client Briefing and Program Management Lab | construction management and on-site
   
 **Research Student**  
 Department of Interior Architecture Design | data collection and analysis
-- Spatial Preference Modeling based on Immersive Virtual Environment and Choice Modeling Theory. 2019	
+- Spatial Preference Modeling based on Immersive Virtual Environment and Choice Modeling Theory. 2019
+- 
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
+
+
 
 
 ## Teaching
