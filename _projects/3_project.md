@@ -6,6 +6,7 @@ img: assets/img/7.jpg
 redirect: https://unsplash.com
 importance: 3
 category: Construction Management
+tags: [Extended Reality, Construction Management, 3D Scanning, Image Processing]
 ---
 
 Every project has a beautiful feature showcase page.
