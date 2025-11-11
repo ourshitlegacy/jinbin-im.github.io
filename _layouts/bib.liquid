@@ -133,28 +133,7 @@
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
-        
-        {%- if author_array_limit > 0 -%}
-          {% if author_is_self %}
-            , and <span class="author-me">{{author.first}} {{author.last}}</span>
-          {% else %}
-            {% if coauthor_url %}
-              , and <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
-            {% else %}
-              , and {{author.first}} {{author.last}}
-            {% endif %}
-          {% endif %}
-        {%- else -%}
-          {% if author_is_self %}
-            <span class="author-me">{{author.first}} {{author.last}}</span>
-          {% else %}
-            {% if coauthor_url %}
-              <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
-            {% else %}
-              {{author.first}} {{author.last}}
-            {% endif %}
-          {% endif %}
-        {%- endif -%}
+
       </div>
 
       <div class="periodical">
