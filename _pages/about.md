@@ -47,7 +47,9 @@ latest_posts: false
   <p><strong>Tools:</strong> Revit, AutoCAD, enscape</p>
 </div>
 
-## Education
+---
+
+<h3 style="font-size: 1.3rem; margin-bottom: 15px;">Education</h3>
 
 <div style="margin-bottom: 25px;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
@@ -73,7 +75,7 @@ latest_posts: false
 
 ---
 
-## Research Projects
+<h3 style="font-size: 1.3rem; margin-bottom: 15px;">Research Projects</h3>
 
 <style>
 .research-projects {
@@ -282,7 +284,7 @@ latest_posts: false
 
 ---
 
-## Teaching
+<h3 style="font-size: 1.3rem; margin-bottom: 15px;">Teaching</h3>
 
 **Teaching Fellow**
 
