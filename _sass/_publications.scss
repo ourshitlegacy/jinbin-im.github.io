@@ -1,26 +1,30 @@
-// 내 이름 강조
+// 내 이름 스타일 - 밑줄 없이 보라색 볼드
 .publications {
-  em.me {
+  .author-me {
     color: #7b27d8 !important; // 보라색
-    font-weight: 600;
+    font-weight: 700 !important; // 볼드
     font-style: normal;
+    text-decoration: none !important; // 밑줄 제거
   }
   
-  // 저널 정보 스타일
-  .note {
-    display: inline-block;
-    margin-left: 8px;
-    font-size: 0.85em;
+  // 저널 메트릭스 스타일
+  .journal-metrics {
+    font-size: 0.9em;
     color: #666;
-    background: #f0f0f0;
-    padding: 3px 10px;
-    border-radius: 12px;
+    margin-left: 5px;
     font-weight: 500;
   }
   
-  // Q1 배지 특별 스타일
-  .note:contains("Q1") {
-    background: #e3f2fd;
-    color: #1565c0;
+  // 연도 스타일 - 짙은 회색
+  .pub-year {
+    color: #555 !important; // 짙은 회색
+    font-weight: 500;
+  }
+  
+  // periodical 전체 스타일 조정
+  .periodical {
+    em {
+      font-style: italic;
+    }
   }
 }
