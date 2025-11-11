@@ -3,7 +3,8 @@ layout: page
 title: Development of Decision-making Framework to Support Personalized Spatial Composition 
 based on Temperament, Perception and Bio-markers Applying Digital Twin.
 description: another without an image
-img:
+img: assets/img/7.jpg
+redirect: https://unsplash.com
 importance: 3
 category: Built Environment
 ---
