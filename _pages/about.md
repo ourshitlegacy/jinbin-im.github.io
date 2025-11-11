@@ -73,7 +73,7 @@ latest_posts: false
 
 ---
 
-## Research Experience
+## Research Projects
 
 <style>
 .research-projects {
