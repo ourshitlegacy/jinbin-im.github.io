@@ -8,6 +8,16 @@ nav_order: 3
 display_categories: [Built Environment, Construction Management]
 horizontal: true
 ---
+<!-- Tag filters -->
+<div class="project-tags" style="margin-bottom: 30px;">
+  <button class="btn btn-sm btn-primary tag-btn active" data-tag="all">All</button>
+  <button class="btn btn-sm btn-outline-primary tag-btn" data-tag="Extended Reality">Climate-Displacement</button>
+  <button class="btn btn-sm btn-outline-primary tag-btn" data-tag="Human Centered Design">Computer-Vision</button>
+  <button class="btn btn-sm btn-outline-primary tag-btn" data-tag="Communication">Urban-Sensing</button>
+  <button class="btn btn-sm btn-outline-primary tag-btn" data-tag="Physiology">LLM</button>
+  <button class="btn btn-sm btn-outline-primary tag-btn" data-tag="ML/AI">Teleworking</button>
+  <!-- 나머지 태그들... -->
+</div>
 
 <!-- pages/projects.md -->
 <div class="projects">
@@ -19,6 +29,7 @@ horizontal: true
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
+  
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
   <div class="container">
@@ -38,15 +49,10 @@ horizontal: true
   {% endfor %}
 
 {% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
+  <!-- Display projects without categories -->
+  {% assign sorted_projects = site.projects | sort: "importance" %}
+  
+  {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
@@ -63,3 +69,29 @@ horizontal: true
   {% endif %}
 {% endif %}
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tagButtons = document.querySelectorAll('.tag-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+  
+  tagButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const selectedTag = this.getAttribute('data-tag');
+      
+      // Update active button
+      tagButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Filter projects
+      projectCards.forEach(card => {
+        if (selectedTag === 'all' || card.dataset.tags.includes(selectedTag)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
