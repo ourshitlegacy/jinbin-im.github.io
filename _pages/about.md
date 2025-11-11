@@ -35,7 +35,7 @@ I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where
 
 **Research Interests**
 
-Extended Reality (Virtual Reality, Mixed Reality), Natural Language Processing, Large Language Models, User Requirements, User Psychology and Physiology, Knowledge Asymmetry, Design Communication, Design Automation, Affective Computing.
+Extended Reality (Virtual Reality, Mixed Reality), Natural Language Processing, Large Language Models, User Requirements, Psychology and Physiology, Cognition and Perception, Occupant Satisfaction, Knowledge Asymmetry, Design Communication, Design Automation, Affective Computing.
 
 **Academic Services**
 - Reviewer, Building and Environment 
