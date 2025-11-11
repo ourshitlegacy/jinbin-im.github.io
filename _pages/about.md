@@ -30,7 +30,7 @@ news: false
 latest_posts: false
 ---
 
-**Jin-Bin Im** is a Ph.D. candidate at Hanyang University, Architectural Engineering . He is a graduate research assistant at the Client Briefing and Program Management (CB&PM) Lab. He earned a Master's degree in Architectural Engineering (2022) from the same institution, and B.S. in Interior Architecture Design (2020) from Hanyang University, South Korea.
+**Jin-Bin I** is a Ph.D. candidate at Hanyang University, Architectural Engineering . He is a graduate research assistant at the Client Briefing and Program Management (CB&PM) Lab. He earned a Master's degree in Architectural Engineering (2022) from the same institution, and B.S. in Interior Architecture Design (2020) from Hanyang University, South Korea.
 
 **Research Interest**
 
