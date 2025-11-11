@@ -66,7 +66,7 @@ nav_order: 3
       <div class="conf-group-title">International Conference on Construction Engineering and Project Management (ICCEPM)</div>
         {%- assign conf_loc  = entry.location | default: entry.address -%}
       <div class="publications">
-        {% bibliography --file conferences --template bib_conference --query @*[year=2025 && booktitle ~= ICCEPM] %}
+        {% bibliography --file conferences --template bib_conference --query @*[conference ~= ICCEPM 2025] %}
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@ nav_order: 3
       <div class="conf-group-title">International Symposium on Automation and Robotics in Construction (ISARC)</div>
         {%- assign conf_loc  = entry.location | default: entry.address -%}
       <div class="publications">
-        {% bibliography --file conferences --template bib_conference --query @*[year=2025 && booktitle ~= ISARC] %}
+        {% bibliography --file conferences --template bib_conference --query @*[conference ~= ISARC 2025] %}
       </div>
     </div>
   </div>
@@ -93,7 +93,7 @@ nav_order: 3
       <div class="conf-group-title">International Conference on Construction Engineering and Project Management (ICCEPM)</div>
         {%- assign conf_loc  = entry.location | default: entry.address -%}
       <div class="publications">
-        {% bibliography --file conferences --template bib_conference --query @*[year=2024 && booktitle ~= ICCEPM] %}
+        {% bibliography --file conferences --template bib_conference --query @*[conference ~= ICCEPM 2024] %}
       </div>
     </div>
   </div>
