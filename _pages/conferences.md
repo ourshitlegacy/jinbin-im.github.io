@@ -100,13 +100,13 @@ nav_order: 3
 <div class="year-group">
   <h2 class="year-title">2024</h2>
   
-  <!-- ISARC 2024 -->
+  <!-- ICCEPM 2024 -->
   <div class="conf-group">
     <div class="conf-group-logo" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
       <span style="color: white; font-size: 1.1rem; font-weight: 700; text-align: center; padding: 10px; line-height: 1.3;">ISARC<br>2024</span>
     </div>
     <div class="conf-group-content">
-      <div class="conf-group-title">International Symposium on Automation and Robotics in Construction 2024</div>
+      <div class="conf-group-title">International Conference on Construction Engineering and Project Management 2024</div>
       <div class="publications">
         {% bibliography --file conferences --template bib_conference --query @*[year=2024 && booktitle ~= ISARC] %}
       </div>
