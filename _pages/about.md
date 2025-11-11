@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Department of Architectural Engineering. Hanyang University.
+subtitle: <strong style="color: #7b27d8;">Affiliations</strong>. Department of Architectural Engineering. Hanyang University.
 
 profile:
   align: right
@@ -49,7 +49,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333"><strong>Education</strong></h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #7b27d8"><strong>Education</strong></h3>
 
 <div style="margin-bottom: 25px;">
   <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
@@ -75,7 +75,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333"><strong>Research Projects</strong></h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #7b27d8"><strong>Research Projects</strong></h3>
 
 <style>
 .research-projects {
@@ -284,7 +284,7 @@ latest_posts: false
 
 ---
 
-<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333"><strong>Teaching</strong></h3>
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #7b27d8"><strong>Teaching</strong></h3>
 
 **Teaching Fellow**
 
