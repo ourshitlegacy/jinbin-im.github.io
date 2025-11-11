@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-conferences",
           title: "conferences",
-          description: "",
+          description: "conferences by categories in reversed chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/conferences/";
