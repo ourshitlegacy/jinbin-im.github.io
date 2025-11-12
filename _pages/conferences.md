@@ -11,7 +11,7 @@ nav_order: 3
 {% include bib_search.liquid %}
 
 <div class="publications">
-{% bibliography --file conferences --template conference_bib %}
+{% bibliography --file conferences --template bib_conference %}
 </div>
 
 <style>
