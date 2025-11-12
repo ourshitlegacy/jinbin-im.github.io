@@ -11,37 +11,78 @@ nav_order: 3
 {% include bib_search.liquid %}
 
 <div class="publications">
-{% bibliography --file conferences --template bib_conference %}
+{% bibliography --file conferences --template conference_bib %}
 </div>
 
 <style>
-/* 컨퍼런스 헤더 스타일 */
+/* 컨퍼런스 헤더 스타일 - 클릭 가능 */
 .conference-header {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   padding: 1.2rem;
   background: #f8f9fa;
   border-left: 4px solid #7b27d8;
   border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.conference-header:hover {
+  background: #f0f1f3;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
 .conference-header h3 {
-  margin: 0 0 0.3rem 0;
-  font-size: 1.2rem;
-  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  color: #222;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conference-header h3::after {
+  content: '▼';
+  font-size: 0.8rem;
+  color: #7b27d8;
+  transition: transform 0.3s;
+}
+
+.conference-header.collapsed h3::after {
+  transform: rotate(-90deg);
 }
 
 .conference-full-title {
   font-size: 0.95rem;
-  color: #555;
+  color: #666;
   font-style: italic;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
 
 .conference-meta {
   font-size: 0.9rem;
-  color: #666;
+  color: #888;
+  font-weight: 500;
+}
+
+/* 논문 리스트 숨김/표시 */
+.conference-papers {
+  display: block;
+  overflow: hidden;
+  max-height: 10000px;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 1;
+}
+
+.conference-papers.hidden {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* 중복 연도 숨김 */
@@ -113,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // 컨퍼런스 헤더 생성
         const header = document.createElement('div');
-        header.className = 'conference-header';
+        header.className = 'conference-header collapsed';  // 기본 닫힌 상태
         
         const title = document.createElement('h3');
         title.textContent = conference;
@@ -138,9 +179,21 @@ document.addEventListener('DOMContentLoaded', function() {
         
         publications.appendChild(header);
         
+        // 논문 리스트를 감싸는 컨테이너 생성
+        const papersContainer = document.createElement('div');
+        papersContainer.className = 'conference-papers hidden';  // 기본 숨김
+        
         // 해당 컨퍼런스의 논문들 추가
         group.rows.forEach(function(row) {
-          publications.appendChild(row);
+          papersContainer.appendChild(row);
+        });
+        
+        publications.appendChild(papersContainer);
+        
+        // 헤더 클릭 시 토글
+        header.addEventListener('click', function() {
+          header.classList.toggle('collapsed');
+          papersContainer.classList.toggle('hidden');
         });
       });
     });
