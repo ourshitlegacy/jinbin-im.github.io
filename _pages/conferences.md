@@ -4,6 +4,7 @@ permalink: /conferences/
 title: conferences
 nav: true
 nav_order: 3
+years: [2025, 2024, 2023, 2022, 2021]
 ---
 
 <!-- _pages/conferences.md -->
