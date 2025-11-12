@@ -27,7 +27,7 @@ profile:
        style="display: block; text-align: center; margin-top: 8px; font-weight: 500; font-size: 0.9rem; color: #7b27d8; text-decoration: none;">
       Curriculum Vitae (CV)
       <span style="font-size: 0.7rem; color: #444;">
-      ·(2025.11.12)
+      (2025.11.12)
       </span>
     </a>
     <p style="display: block; text-align: center; margin-top: 6px; font-size: 0.9rem; color: #444;">
