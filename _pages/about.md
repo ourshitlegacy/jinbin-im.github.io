@@ -314,7 +314,9 @@ I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where
 
 ---
 
-**Current Under Review Papers**
+<h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #333; font-weight: 700;">Current Submissions and Preparations</h3>
+
+**Manuscripts Under Review**
 
 <div style="font-size: 0.88em; line-height: 1; margin-bottom: 30px;">
 
@@ -331,5 +333,15 @@ I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where
 <p>Hong, R. L., <strong style="color: #7b27d8;">Im, J. B.</strong>, Kang, H. G., & Kim, J. H.<sup>*</sup> Prediction of structural frame works safety and health management expenses in apartment construction projects by introducing interpretable machine learning. (Under Review).</p>
 
 <p>Hong, R. L., Yoon, J. H., <strong style="color: #7b27d8;">Im, J. B.</strong>, & Kim, J. H.<sup>*</sup> Prediction of Actual Safety and Health Management Expenses for Water Supply System Construction Projects in Korea through Machine Learning. (Under Review).</p>
+
+</div>
+
+**Manuscripts in Preparation**
+
+<div style="font-size: 0.88em; line-height: 1; margin-bottom: 30px;">
+
+<p><strong style="color: #7b27d8;">Im, J. B.</strong>, Ham, N., Xu, L., & Kim, J. H.<sup>*</sup> Optimal transport-based automatic framework of architectural design revision from affective user feedback in building information modeling environment</p>
+
+<p><strong style="color: #7b27d8;">Im, J. B.</strong>, Lee, K. T., & Kim, J. H.<sup>*</sup> A data-driven affective engineering framework for predicting emotional coherence for architectural design decision.</p>
 
 </div>
