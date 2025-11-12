@@ -56,48 +56,39 @@ nav_order: 3
   box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
-/* h3를 그리드 레이아웃으로 변경 */
+/* h3를 그리드 레이아웃으로 변경 - 고정 너비 */
 .conference-header h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.3rem;
   color: #222;
   font-weight: 600;
   display: grid;
-  grid-template-columns: 1fr auto auto auto;  /* 학회명 | month | address | 화살표 */
+  grid-template-columns: 200px 200px 1fr auto;  /* 학회명(200px) | month(200px) | address(나머지) | 화살표 */
   align-items: center;
-  gap: 1.5rem;  /* 각 요소 간 간격 */
+  gap: 1rem;
 }
 
-/* 학회명 */
+/* 학회명 - 고정 너비 200px, 왼쪽 정렬 */
 .conference-name {
   font-size: 1.3rem;
   font-weight: 600;
   color: #222;
+  width: 200px;
 }
 
-/* Month와 Address 공통 스타일 */
-.conference-location {
+/* Month - 고정 너비 200px, 왼쪽 정렬 */
+.conference-month {
   font-size: 0.75rem;
   font-weight: 400;
   color: #888;
-  white-space: nowrap;  /* 한 줄로 유지 */
+  width: 200px;
 }
 
-/* Month 전용 스타일 */
-.conference-month {
-  min-width: 60px;  /* 최소 너비 고정 */
-  text-align: right;
-}
-
-/* Address 전용 스타일 */
+/* Address - 나머지 공간 사용, 왼쪽 정렬 */
 .conference-address {
-  min-width: 150px;  /* 최소 너비 고정 */
-  text-align: right;
-}
-
-/* Month/Address 구분자 제거 */
-.conference-location::before {
-  display: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #888;
 }
 
 /* 화살표 */
@@ -106,7 +97,7 @@ nav_order: 3
   font-size: 0.8rem;
   color: #7b27d8;
   transition: transform 0.3s;
-  justify-self: end;  /* 오른쪽 정렬 */
+  justify-self: end;
 }
 
 .conference-header.collapsed h3::after {
@@ -217,22 +208,22 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const title = document.createElement('h3');
         
-        // 1. 컨퍼런스 이름 (왼쪽)
+        // 1. 컨퍼런스 이름 (고정 너비 200px, 왼쪽 정렬)
         const confName = document.createElement('span');
         confName.className = 'conference-name';
         confName.textContent = conference;
         title.appendChild(confName);
         
-        // 2. Month (고정 위치)
+        // 2. Month (고정 너비 200px, 왼쪽 정렬)
         const month = document.createElement('span');
-        month.className = 'conference-location conference-month';
-        month.textContent = group.month || '';  // 빈 문자열로 공간 유지
+        month.className = 'conference-month';
+        month.textContent = group.month || '';
         title.appendChild(month);
         
-        // 3. Address (고정 위치)
+        // 3. Address (나머지 공간, 왼쪽 정렬)
         const location = document.createElement('span');
-        location.className = 'conference-location conference-address';
-        location.textContent = group.address || '';  // 빈 문자열로 공간 유지
+        location.className = 'conference-address';
+        location.textContent = group.address || '';
         title.appendChild(location);
         
         header.appendChild(title);
