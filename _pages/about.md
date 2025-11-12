@@ -318,7 +318,7 @@ I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where
 
 **Manuscripts Under Review**
 
-<div style="font-size: 0.88em; line-height: 0.8; margin-bottom: 20px;">
+<div style="font-size: 0.88em; line-height: 0.9; margin-bottom: 10px;">
 
 <p><strong style="color: #7b27d8;">Im, J. B.<sup>†</sup></strong>, Ahn, C.<sup>†</sup>, Lee, S. Y., Yoo, Y., & Kim, J. H.<sup>*</sup> Techno-Economic Feasibility of e-Methanol System fueled by CO2 and Green Hydrogen with Policy Pathways to Competitiveness. (Co-First Author).</p>
 
@@ -338,7 +338,7 @@ I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where
 
 **Manuscripts in Preparation**
 
-<div style="font-size: 0.88em; line-height: 0.8; margin-bottom: 20px;">
+<div style="font-size: 0.88em; line-height: 0.9; margin-bottom: 10px;">
 
 <p><strong style="color: #7b27d8;">Im, J. B.</strong>, Ham, N., Xu, L., & Kim, J. H.<sup>*</sup> Optimal transport-based automatic framework of architectural design revision from affective user feedback in building information modeling environment</p>
 
