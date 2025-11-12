@@ -81,7 +81,7 @@ nav_order: 3
   font-size: 0.75rem;
   font-weight: 400;
   color: #888;
-  width: 200px;
+  width: 150px;
 }
 
 /* Address - 나머지 공간 사용, 왼쪽 정렬 */
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const conference = row.getAttribute('data-conference') || 'Other';
       const booktitle = row.getAttribute('data-booktitle') || '';
       const address = row.getAttribute('data-address') || '';
-      const month = row.getAttribute('data-month') || '';
+      const monthValue = row.getAttribute('data-month') || '';  // 변수명 명확하게
       
       if (!yearGroups[year]) {
         yearGroups[year] = {};
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
           rows: [],
           booktitle: booktitle,
           address: address,
-          month: month
+          month: monthValue  // monthValue를 저장
         };
       }
       
@@ -215,16 +215,16 @@ document.addEventListener('DOMContentLoaded', function() {
         title.appendChild(confName);
         
         // 2. Month (고정 너비 200px, 왼쪽 정렬)
-        const month = document.createElement('span');
-        month.className = 'conference-month';
-        month.textContent = group.month || '';
-        title.appendChild(month);
+        const monthSpan = document.createElement('span');  // 변수명 변경
+        monthSpan.className = 'conference-month';
+        monthSpan.textContent = group.month || '';  // group.month 값 사용
+        title.appendChild(monthSpan);
         
         // 3. Address (나머지 공간, 왼쪽 정렬)
-        const location = document.createElement('span');
-        location.className = 'conference-address';
-        location.textContent = group.address || '';
-        title.appendChild(location);
+        const addressSpan = document.createElement('span');  // 변수명 변경
+        addressSpan.className = 'conference-address';
+        addressSpan.textContent = group.address || '';
+        title.appendChild(addressSpan);
         
         header.appendChild(title);
         
