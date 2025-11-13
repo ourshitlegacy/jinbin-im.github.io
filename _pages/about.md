@@ -44,7 +44,7 @@ news: false
 latest_posts: false
 ---
 
-I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where I also serve as a Graduate Research Assistant at the <a href="http://cbpm.hanyang.ac.kr/"><strong><span style="color:#7b27d8;">Client Briefing and Program Management (CB&PM) Lab.</span></strong></a> My passion lies in <strong><span style="color:#7b27d8;">Human–Centered Design (HCD) and Human–Machine Interaction (HMI) in Architectural Design.</span></strong> I earned my M.S. in Architectural Engineering (2022) and B.S. in Interior Architecture Design (2020) from Hanyang University as well. My academic work focuses on three key areas: **1) optimizing spatial design based on human-centered requirements**, **2) design simulation using extended reality (XR)**, and **3) natural language processing and LLM-based intelligent systems for design automation.**
+I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where I also serve as a Graduate Research Assistant at the <a href="http://cbpm.hanyang.ac.kr/"><strong><span style="color:#4f3670; text-decoration:underline;">Client Briefing and Program Management (CB&PM) Lab.</span></strong></a> My passion lies in <strong><span style="color:#4f3670;">Human–Centered Design (HCD) and Human–Machine Interaction (HMI) in Architectural Design.</span></strong> I earned my M.S. in Architectural Engineering (2022) and B.S. in Interior Architecture Design (2020) from Hanyang University as well. My academic work focuses on three key areas: **1) optimizing spatial design based on human-centered requirements**, **2) design simulation using extended reality (XR)**, and **3) natural language processing and LLM-based intelligent systems for design automation.**
 
 **Research Interests**
 
