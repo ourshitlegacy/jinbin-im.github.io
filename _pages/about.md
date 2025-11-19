@@ -56,7 +56,8 @@ I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where
 
 
 **Academic Services**
-- Reviewer, Building and Environment 
+- Reviewer, Building and Environment
+- Reviewer, Architectural Engineering and Design Management
 
 ---
 
