@@ -337,7 +337,7 @@ I am a Ph.D. candidate in Architectural Engineering at Hanyang University, where
 
 <p>Lee, K. T., <strong style="color: #7b27d8;">Im, J. B.</strong>, Hong, R. L., & Kim, J. H.<sup>*</sup> Enhancing Retrieval-Augmented Generation Performance through Network Analysis of Question Types in Public Procurement Law. (Under Review).</p>
 
-<p><strong style="color: #7b27d8;">Im, J. B.</strong>, Lee, K. T. & Kim, J. H.<sup>*</sup> Effects of Visualization Quality on Occupant Responses in Immersive Design Review Environments. (Under Review).</p>
+<p><strong style="color: #7b27d8;">Im, J. B.</strong>, Lee, K. T. & Kim, J. H.<sup>*</sup> Optimizing Immersive Virtual Environments for Architectural Design Review: The Impact of Visualization Quality on Occupant-Centric Performance Assessment. (Under Review).</p>
 
 <p>Ochirsuren, N., Kye, Y. S., <strong style="color: #7b27d8;">Im, J. B.</strong>, Zhang, E., & Lee, K. T., Kim, J. H.<sup>*</sup> Effect of Changing Sequence in Semi-Top-Down Construction Works to Optimize Time and Cost: A Case Study on Korean Apartment Projects. (Under Review).</p>
 
